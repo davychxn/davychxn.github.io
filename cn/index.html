@@ -425,6 +425,30 @@
       #image02 .frame img {
         transition: none;
       }
+      #image02 {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      #lang-cn-button {
+        align-items: center;
+        background-color: #2563eb;
+        border-radius: 0.5rem;
+        color: #ffffff;
+        display: inline-flex;
+        font-family: "Inter", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 700;
+        height: 2rem;
+        justify-content: center;
+        margin-left: 0.75rem;
+        margin-top: 0;
+        text-decoration: none;
+        vertical-align: bottom;
+        width: 2rem;
+      }
+      #lang-cn-button:hover {
+        background-color: #1d4ed8;
+      }
       #image01:not(:first-child) {
         margin-top: 2rem !important;
       }
@@ -1919,6 +1943,12 @@
                       ><img src="./index_files/image02.png" alt=""
                     /></span>
                   </div>
+                  <a
+                    id="lang-cn-button"
+                    href="../"
+                    aria-label="Chinese version"
+                    >EN</a
+                  >
                   <h3 id="text13" style="opacity: 1; transform: none">
                     无锡绅以佑信信息科技有限公司
                   </h3>
@@ -3892,6 +3922,14 @@
           replay: false,
         });
         onvisible.add("#image02", {
+          style: "fade-right",
+          speed: 1000,
+          intensity: 10,
+          threshold: 3,
+          delay: 0,
+          replay: false,
+        });
+        onvisible.add("#lang-cn-button", {
           style: "fade-right",
           speed: 1000,
           intensity: 10,

@@ -425,6 +425,30 @@
       #image02 .frame img {
         transition: none;
       }
+      #image02 {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      #lang-cn-button {
+        align-items: center;
+        background-color: #2563eb;
+        border-radius: 0.5rem;
+        color: #ffffff;
+        display: inline-flex;
+        font-family: "Inter", sans-serif;
+        font-size: 0.75rem;
+        font-weight: 700;
+        height: 2rem;
+        justify-content: center;
+        margin-left: 0.75rem;
+        margin-top: 0;
+        text-decoration: none;
+        vertical-align: bottom;
+        width: 2rem;
+      }
+      #lang-cn-button:hover {
+        background-color: #1d4ed8;
+      }
       #image01:not(:first-child) {
         margin-top: 2rem !important;
       }
@@ -1919,6 +1943,12 @@
                       ><img src="./index_files/image02.png" alt=""
                     /></span>
                   </div>
+                  <a
+                    id="lang-cn-button"
+                    href="./cn/"
+                    aria-label="Chinese version"
+                    >中</a
+                  >
                   <h3 id="text13" style="opacity: 1; transform: none">
                     DECENT GUYS LLC
                   </h3>
@@ -1930,7 +1960,8 @@
                     class="style2"
                     style="opacity: 1; transform: none"
                   >
-                    A high-tech company providing AI Based Linguistic Online Tools/Semantic Online Tools/Realtime Speech Synthesis web
+                    A high-tech company providing AI Based Linguistic Online
+                    Tools/Semantic Online Tools/Realtime Speech Synthesis web
                     products based in Seattle, Guangzhou and Wuxi since 2018.
                   </p>
                 </div>
@@ -1972,8 +2003,8 @@
                     class="style2"
                     style="opacity: 1; transform: none"
                   >
-                    AI Based Linguistic / Semantic online tools,
-                    your languages expert.
+                    AI Based Linguistic / Semantic online tools, your languages
+                    expert.
                   </p>
                   <ul
                     id="buttons13"
@@ -2226,9 +2257,7 @@
           <p id="text09" style="opacity: 1; transform: none">
             © 2024 DECENT GUYS LLC. All rights reserved.
           </p>
-          <div
-            style="width: 100%; text-align: center; font-size: small;"
-          >
+          <div style="width: 100%; text-align: center; font-size: small">
             <span
               ><a href="https://carrd.co/build?ref=auto"
                 >Made with Carrd</a
@@ -3876,6 +3905,14 @@
           replay: false,
         });
         onvisible.add("#image02", {
+          style: "fade-right",
+          speed: 1000,
+          intensity: 10,
+          threshold: 3,
+          delay: 0,
+          replay: false,
+        });
+        onvisible.add("#lang-cn-button", {
           style: "fade-right",
           speed: 1000,
           intensity: 10,
